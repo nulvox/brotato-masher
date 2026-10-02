@@ -43,4 +43,4 @@ The workflow uses the repository flake for Go, Node, Chromium, Playwright toolin
 4. Download `save_v3_0_edited.json`.
 5. Replace the game save only after verifying the exported file.
 
-The editor currently displays numeric IDs because the inspected save format does not contain stable human-readable names. It does not edit active runs, difficulty completion records, or unknown fields.
+The editor currently displays numeric IDs because the inspected save format does not contain stable human-readable names. It supports unlock/challenge collections, lifetime statistics, purchase and enemy counters, read-announcement arrays, and per-character/per-zone difficulty selection. Existing beaten-wave records are preserved and shown for reference. It does not edit unknown fields or active run state.

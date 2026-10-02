@@ -18,6 +18,9 @@
     <div class="section-heading"><div><h2 id="edit-title">2. Edit in memory</h2><p id="summary"></p></div><button id="reset" class="secondary" type="button">Reset edits</button></div>
     <div id="collections" class="grid"></div>
     <h3>Lifetime statistics</h3><div id="stats" class="stats"></div>
+    <h3>Purchase and enemy counters</h3><div id="counters" class="counter-grid"></div>
+    <h3>Difficulty progress</h3><p class="muted">Edit selected and maximum selectable difficulty per character and zone. Existing beaten-wave records are shown for reference.</p><div class="table-wrap"><table><thead><tr><th>Character</th><th>Zone</th><th>Selected</th><th>Max selectable</th><th>Beaten wave</th><th>Endless wave</th></tr></thead><tbody id="difficulties"></tbody></table></div>
+    <h3>Read announcements</h3><label class="wide-field"><span>JSON array</span><textarea id="announcements" rows="3" aria-label="Read announcements JSON"></textarea></label>
     <div class="actions"><button id="download" type="button">Download edited save</button><p>Always keep a backup. The original file is never overwritten.</p></div>
   </section>
   <section class="card help"><h2>Using the file</h2><p>Close Brotato before replacing its save. On Linux, the Steam save is usually under <code>~/.local/share/Brotato/&lt;Steam ID&gt;/</code>. This editor only downloads a new JSON file.</p></section>
