@@ -31,7 +31,7 @@ Then open <http://127.0.0.1:8765/>. The editor never uploads the selected save a
 
 ## GitHub Pages
 
-`.github/workflows/pages.yml` tests pull requests and deploys `dist/` to GitHub Pages after pushes to `main`. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. If the default branch is not `main`, update the workflow branch filter.
+`.github/workflows/pages.yml` tests pull requests and deploys `dist/` to GitHub Pages after pushes to `main`. Opening a pull request is enough to run the build/test job without deploying. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. If the default branch is not `main`, update the workflow branch filter.
 
 The workflow uses the repository flake for Go, Node, Chromium, Playwright tooling, and `jq`. `tests/browser-smoke.sh` uses Chromium headless as the deterministic baseline so it can run without downloading browser packages at test time.
 
