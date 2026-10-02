@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "characters_unlocked": [1, 2],
+  "consumables_unlocked": [3],
+  "items_unlocked": [],
+  "upgrades_unlocked": [],
+  "weapons_unlocked": [],
+  "zones_unlocked": [0],
+  "data": {"enemies_killed": 4, "run_won": 0},
+  "unknown": {"must_survive": true}
+}

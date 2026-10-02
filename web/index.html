@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brotato Save Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <header><p class="eyebrow">LOCAL · PRIVATE · STATIC</p><h1>Brotato Save Editor</h1><p>Load a copy of your save, edit unlock collections, and download a new file. Nothing is uploaded.</p></header>
+  <section class="card" aria-labelledby="load-title">
+    <h2 id="load-title">1. Load a save</h2>
+    <label class="drop" id="drop-zone" for="save-file"><strong>Choose save_v3_0.json</strong><span>or drag and drop it here</span><input id="save-file" type="file" accept=".json,application/json"></label>
+    <p id="status" class="status" role="status">No save loaded.</p>
+  </section>
+  <section id="editor" class="card hidden" aria-labelledby="edit-title">
+    <div class="section-heading"><div><h2 id="edit-title">2. Edit in memory</h2><p id="summary"></p></div><button id="reset" class="secondary" type="button">Reset edits</button></div>
+    <div id="collections" class="grid"></div>
+    <h3>Lifetime statistics</h3><div id="stats" class="stats"></div>
+    <div class="actions"><button id="download" type="button">Download edited save</button><p>Always keep a backup. The original file is never overwritten.</p></div>
+  </section>
+  <section class="card help"><h2>Using the file</h2><p>Close Brotato before replacing its save. On Linux, the Steam save is usually under <code>~/.local/share/Brotato/&lt;Steam ID&gt;/</code>. This editor only downloads a new JSON file.</p></section>
+</main>
+<script src="wasm_exec.js"></script><script src="app.js"></script>
+</body>
+</html>
