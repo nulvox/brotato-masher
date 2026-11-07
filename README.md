@@ -2,6 +2,8 @@
 
 A private, static Brotato save editor. Save data is processed in the browser: the Go/WASM core validates and edits JSON, while the small JavaScript wrapper handles files and downloads.
 
+**Live editor:** [https://nulvox.github.io/brotato-masher/](https://nulvox.github.io/brotato-masher/)
+
 ## Development
 
 Enter the reproducible Nix environment:
